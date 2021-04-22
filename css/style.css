@@ -46,7 +46,7 @@ body {
     padding-right: 15px;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
@@ -97,4 +97,55 @@ header {
     font-size: 7.4rem;
     text-transform: uppercase;
     margin: 0;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.social .nav__link {
+    font-size: 1.6rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.project__img {
+    background: url("../img/arrow.svg") no-repeat;
+    width: 16px;
+    height: 12px;
+    display: block;
+    margin-left: 15px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__item {
+    flex: 0 0 24%;
+}
+
+.title-h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.skill .title-h3 {
+    text-transform: uppercase;
+}
+
+.skill .description {
+    line-height: 150%;
+    font-size: 1.4rem;
+    opacity: 0.8;
 }
