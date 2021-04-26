@@ -26,6 +26,14 @@ body {
     color: #F3F2F0;
 }
 
+.dark .circle circle {
+    fill: #D40000;
+}
+
+.dark .triangle path {
+    fill: #fff;
+}
+
 .dark .nav__link {
     color: #F3F2F0;
 } 
@@ -34,6 +42,15 @@ body {
     background-color: #E5E5E5;
     color: #010101;
 }
+
+.light .circle circle {
+    fill: #fff;
+}
+
+.light .triangle path {
+    fill:#D40000;
+}
+
 
 .light .nav__link {
     color: #010101;
@@ -61,6 +78,25 @@ body {
     display: flex;
 }
 
+.nav-info .nav__item {
+    position: relative;
+}
+
+.nav-info .nav__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    background-color: rgb(243, 242, 240, .5);
+    left: 0;
+    top:calc(50% - 12px);
+}
+
+.nav-info .nav__item:first-child::before {
+    display: none;
+}
+
 .nav__item {
     padding-left: 16px;
     padding-right: 16px;
@@ -77,6 +113,7 @@ body {
 .nav__link {
     text-decoration: none;  
     font-size: 1.4rem; 
+    transition: 0.2s linear;
 }
 
 .nav__link:hover {
@@ -88,15 +125,26 @@ body {
     margin-bottom: 120px;
 }
 
+.main {
+    position: relative;
+}
+
 .name {
     font-size: 2.8rem;
     margin: 0 0 30px 0;
+    position: relative;
+    z-index: 3;
 }
 
-.title {
+.title-h1 {
     font-size: 7.4rem;
     text-transform: uppercase;
     margin: 0;
+}
+
+.main .title-h1 {
+    position: relative;
+    z-index: 4;
 }
 
 .social {
@@ -104,6 +152,10 @@ body {
     justify-content: space-between;
     padding-top: 100px;
     padding-bottom: 60px;
+}
+
+.social__item:last-child {
+    position: relative;
 }
 
 .social .nav__link {
@@ -149,3 +201,55 @@ body {
     font-size: 1.4rem;
     opacity: 0.8;
 }
+
+.circle-main {
+    width: 253px;
+    height: 253px;  
+    position: absolute;
+    left: -127px;
+    top: calc(50% - 126px);
+    z-index: 1;
+}
+
+.triangle-main {
+    width: 66px;
+    height: 72px;
+    position: absolute;
+    left: -150px;
+    top:0;
+    z-index: 2;
+}
+
+.circle-nav {
+    width: 106px;
+    height: 106px;
+    position: absolute;
+    right: 38px;
+    top: calc(50% - 53px)
+}
+
+.section-steps {
+    padding-top: 100px;
+    padding-bottom: 198px;
+}
+
+.steps__item {
+    display: flex;
+    justify-content: space-between;
+    line-height: 150%;
+    align-items: center;
+}
+
+.steps__item span {
+    margin-right: 45px;
+}
+
+.steps__title {
+    font-size: 2.8rem; 
+}
+
+.steps__description {
+    color: rgba(243, 242, 240, 0.8);
+    font-size: 1.6rem;
+}
+
