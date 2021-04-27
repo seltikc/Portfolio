@@ -38,6 +38,16 @@ body {
     color: #F3F2F0;
 } 
 
+.dark .social,
+.dark .steps__item {
+    border-bottom: 1px solid #F3F2F0;
+}
+
+.dark .steps__item:first-child {
+    border-top:  1px solid #F3F2F0; ;
+} 
+
+
 .light {
     background-color: #E5E5E5;
     color: #010101;
@@ -54,6 +64,15 @@ body {
 
 .light .nav__link {
     color: #010101;
+} 
+
+.light .social,
+.light .steps__item {
+    border-bottom: 1px solid #010101;
+}
+
+.light .steps__item:first-child {
+    border-top:  1px solid #010101;
 } 
 
 .wrapper {
@@ -181,10 +200,11 @@ body {
 .skill {
     display: flex;
     justify-content: space-between;
+    padding-top: 60px;
 }
 
 .skill__item {
-    flex: 0 0 24%;
+    flex: 0 0 21%;
 }
 
 .title-h3 {
@@ -233,11 +253,14 @@ body {
     padding-bottom: 198px;
 }
 
+
 .steps__item {
     display: flex;
     justify-content: space-between;
     line-height: 150%;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .steps__item span {
@@ -251,5 +274,7 @@ body {
 .steps__description {
     color: rgba(243, 242, 240, 0.8);
     font-size: 1.6rem;
+    max-width: 49%;
+    flex: 0 0 49%;
 }
 
