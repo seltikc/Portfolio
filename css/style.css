@@ -90,7 +90,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 64px;
 }
 
 .nav {
@@ -121,7 +121,7 @@ body {
 }
 
 .nav__item {
-    padding-left: 16px;
+    padding-left: 12px;
     padding-right: 16px;
 }
 
@@ -145,7 +145,7 @@ body {
 
 .photo {
     width: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 106px;
 }
 
 .main {
@@ -154,7 +154,7 @@ body {
 
 .name {
     font-size: 2.8rem;
-    margin: 0 0 30px 0;
+    margin: 15px 0 39px 0;
     position: relative;
     z-index: 3;
 }
@@ -163,6 +163,7 @@ body {
     font-size: 7.4rem;
     text-transform: uppercase;
     margin: 0;
+    letter-spacing: 0.03em;
 }
 
 .main .title-h1 {
@@ -191,6 +192,10 @@ body {
     margin: 0;
     font-size: 1.6rem;
     font-weight: 700;
+}
+
+.project:hover {
+    border-bottom: 2px solid ;
 }
 
 .project__img {
@@ -231,7 +236,7 @@ body {
     height: 253px;  
     position: absolute;
     left: -127px;
-    top: calc(50% - 126px);
+    top: calc(50% - 137px);
     z-index: 1;
 }
 
@@ -240,7 +245,7 @@ body {
     height: 72px;
     position: absolute;
     left: -150px;
-    top:0;
+    top:-21px;
     z-index: 2;
 }
 
