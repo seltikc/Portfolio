@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <title>Portfolio</title>
 </head>
@@ -175,10 +176,9 @@
                                     </div>
                                 </div>
                                 <div id="tabs-3"></div>
-                            
+                            </div>
                         </section>
-                    </div>
-
+                </div>
                 </div>
                 <div class="wrapper">
                     <section class="section-advantages">
@@ -288,17 +288,59 @@
                             </div>
                         </div>
                     </section>
+                    <section class="section-tech">
+                        <div class="tech">
+                            <div class="tech-item html">
+                                <img class="tech-image" src="img/tech/html.svg" alt="Html" title="Язык гипертекстовой разметки">
+                            </div>
+
+                            <div class="tech-item css">
+                                <img class="tech-image" src="img/tech/css.svg" alt="Css" title="Каскадные таблицы стилей">
+                            </div>
+
+                            <div class="tech-item js">
+                                <img class="tech-image" src="img/tech/js.svg" alt="Js" title="Язык программирования высокого уровня, использующийся для придания интерактивности веб-страницам">
+                            </div>
+
+                            <div class="tech-item jquery">
+                                <img class="tech-image" src="img/tech/jquery.svg" alt="Jquery" title="Популярная библиотека JavaScript">
+                            </div>
+
+                            <div class="tech-item bootstrap">
+                                <img class="tech-image" src="img/tech/bootstrap.svg" alt="Bootstrap" title="Популярный CSS фреймворк">
+                            </div>
+
+                            <div class="tech-item php">
+                                <img class="tech-image" src="img/tech/php.svg" alt="Php" title="Серверный язык программирования">
+                            </div>
+
+                            <div class="tech-item vue">
+                                <img class="tech-image" src="img/tech/vue.svg" alt="VueJS" title="JS-фреймворк для создания пользовательских интерфейсов">
+                            </div>
+
+                            <div class="tech-item wp">
+                                <img class="tech-image" src="img/tech/wordpress.svg" alt="Wordpress" title="Популярная CMS для создания блогов">
+                            </div>
+                        </div>
+                    </section>
                 </div>
-        
-    </div>
-    
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/script/jquery-ui.min.js"></script>
     <script>
+
         $( function() {
-            $( "#tabs" ).tabs();
+            $("#tabs").tabs({ active: 0});
+            $( document ).tooltip();
         } );
-    </script>
+        $( ".tech-image" ).tooltip({
+        position: {
+            my: "center top",
+            at: "center bottom-10",
+            collision: "none"
+        }
+        });
+        
+        </script>
 </body>
 </html>
